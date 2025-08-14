@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura Café FR 🌸 – Candidature Modération</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="petals"></div>
+
+  <header>
+    <h1 class="title">Sakura Café FR 🌸</h1>
+    <p class="subtitle">Recrutement Modérateur</p>
+    <button id="creatorBtn">👤 Créateur</button>
+  </header>
+
+  <!-- Modal Créateur -->
+  <div id="creatorModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Créateur</h2>
+      <p><strong>Pseudo :</strong> MJ84C</p>
+      <p><strong>Discord :</strong> @mjcookiee</p>
+      <p><a href="https://www.youtube.com/@MJEn4k" target="_blank">📺 Ma chaîne YouTube</a></p>
+    </div>
+  </div>
+
+  <main>
+    <form id="applyForm">
+      <label>1) Pseudo Discord *</label>
+      <input type="text" name="discord" required>
+
+      <label>2) Âge *</label>
+      <input type="number" name="age" min="13" required>
+
+      <label>3) Depuis combien de temps êtes-vous sur Discord ? *</label>
+      <input type="text" name="timezone" required>
+
+      <label>4) Pourquoi vous ? *</label>
+      <input type="text" name="location" required>
+
+      <label>5) Langues parlées *</label>
+      <input type="text" name="languages" required>
+
+      <label>6) Disponibilités *</label>
+      <textarea name="availability" required></textarea>
+
+      <label>7) Expérience en modération *</label>
+      <textarea name="experience" required></textarea>
+
+      <label>8) Bots maîtrisés *</label>
+      <textarea name="tools" required></textarea>
+
+      <label>9) Pourquoi veux-tu être modo ici ? *</label>
+      <textarea name="motivation" required></textarea>
+
+      <label>10) Tes points forts *</label>
+      <textarea name="strengths" required></textarea>
+
+      <label>11) Que pourrez-vous apporter au serveur *</label>
+      <textarea name="weaknesses" required></textarea>
+
+      <label>12) Comment gères-tu un conflit ? *</label>
+      <textarea name="conflict" required></textarea>
+
+      <label>13) Que fais-tu si un ami enfreint une règle ? *</label>
+      <textarea name="friend_rule" required></textarea>
+
+      <label>14) Réaction face à un raid/spam massif ? *</label>
+      <textarea name="raid" required></textarea>
+
+      <label>15) J’accepte le règlement *</label>
+      <input type="checkbox" name="tos" required>
+
+      <button type="submit">Envoyer la candidature</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

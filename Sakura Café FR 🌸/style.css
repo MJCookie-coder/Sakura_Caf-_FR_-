@@ -1,0 +1,138 @@
+/* Import police japonaise */
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(180deg, #0b1020 0%, #1a0f1c 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Animation pétales */
+#petals {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.petal {
+  position: absolute;
+  top: -10px;
+  background: pink;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 114, 198, 0.2);
+  border-bottom: 2px solid rgba(90, 180, 255, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.5em;
+  background: linear-gradient(90deg, #ff72c6, #5ab4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+#creatorBtn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #5ab4ff, #ff72c6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Modal Créateur */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #1a1a2e;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid #ff72c6;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Formulaire */
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(90deg, #5ab4ff, #ff72c6);
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
