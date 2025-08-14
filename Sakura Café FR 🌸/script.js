@@ -45,7 +45,7 @@ document.getElementById("applyForm").addEventListener("submit", function (e) {
     message += `**${key}** : ${value}\\n`;
   });
 
-  fetch("TON_WEBHOOK_DISCORD_ICI", {
+  fetch("https://discord.com/api/webhooks/1405668776606961685/LfCggajdPwZX5h2HHjSZC88cxIkeZY6mrpwlztw6exymjGg631MfwRcb_dFU89GIaULm", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
